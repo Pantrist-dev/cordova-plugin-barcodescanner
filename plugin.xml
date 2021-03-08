@@ -50,7 +50,7 @@
     </config-file>
     <framework src="src/android/barcodescanner.gradle" custom="true" type="gradleReference"/>
     <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
-    <lib-file src="src/android/barcodescanner-release-2.1.5.aar"/>
+    <lib-file src="src/android/barcodescanner-release-2.1.6.aar"/>
     <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
   </platform>
 
