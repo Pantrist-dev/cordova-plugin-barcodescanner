@@ -27,7 +27,7 @@
           <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-          <pod name="BarcodeScanner" git="https://github.com/hyperoslo/BarcodeScanner.git" tag="5.0.1" />
+          <pod name="BarcodeScanner" git="https://github.com/hyperoslo/BarcodeScanner.git" commit="059cd71c4e3b9efc8d7e42fa1948bf572471b448" />
       </pods>
     </podspec>
   </platform>
