@@ -13,6 +13,10 @@ import BarcodeScanner
     let arguments = command.argument(at: 0) as? NSMutableDictionary;
     if (arguments != nil) {
         viewController.cameraViewController.showsCameraButton = arguments?["showFlipCameraButton"] as! Bool
+        
+        if (arguments?["preferFrontCamera"] as! Bool) {
+            viewController.cameraViewController.initialCameraPosition = .front
+        }
     }
 
     self.viewController?.present(viewController,animated: true,completion: nil)
