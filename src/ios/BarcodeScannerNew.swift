@@ -9,6 +9,11 @@ import BarcodeScanner
     let viewController = makeBarcodeScannerViewController()
     viewController.headerViewController.titleLabel.text = "Scan barcode"
     viewController.headerViewController.closeButton.tintColor = .red
+      
+    let arguments = command.argument(at: 0) as? NSMutableDictionary;
+    if (arguments != nil) {
+        viewController.cameraViewController.showsCameraButton = arguments?["showFlipCameraButton"] as! Bool
+    }
 
     self.viewController?.present(viewController,animated: true,completion: nil)
     self.myCallbackId = command.callbackId
